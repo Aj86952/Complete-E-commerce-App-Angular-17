@@ -1,0 +1,81 @@
+div ul li a:hover {
+  font-weight: 600;
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.suggested-result {
+  list-style-type: none;
+  padding-left: 0px;
+  position: absolute;
+  display: list-item !important;
+  z-index: 1;
+  width: 200px;
+  top: 50px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.suggested-result li {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.suggested-result li a {
+  cursor: pointer;
+  color: blueviolet;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  // margin: 0px 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.navbar ul {
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar li {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar h1 {
+  color: blueviolet;
+  margin: 0px;
+}
+
+.navbar .navbar-search {
+  margin-top: 5px;
+  flex: 1;
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.navbar .navbar-search input {
+  flex: 1;
+  color: black;
+  border: 1px solid blueviolet;
+  height: 35px;
+  border-right: 0px;
+}
+
+.navbar .navbar-search button {
+  color: blueviolet;
+  border: 1px solid blueviolet;
+  height: 35px;
+  border-left: 0px;
+}

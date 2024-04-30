@@ -1,0 +1,113 @@
+{
+  "sellers": [
+    {
+      "id": "1331",
+      "name": "aman",
+      "email": "aman",
+      "password": "123"
+    },
+    {
+      "name": "om",
+      "email": "om",
+      "password": "123",
+      "id": "0It0r0v"
+    }
+  ],
+  "products": [
+    {
+      "name": "Oneplus",
+      "price": "30099",
+      "color": "blue",
+      "category": "mobile",
+      "url": "assets/images/hardik-sharma-CrPAvN29Nhs-unsplash.jpg",
+      "id": "b124"
+    },
+    {
+      "name": "vivo",
+      "price": "40000",
+      "color": "green",
+      "category": "mobile",
+      "url": "assets/images/francesco-1bBCtUAUMFI-unsplash.jpg",
+      "id": "55cd"
+    },
+    {
+      "name": "apple",
+      "price": "80000",
+      "color": "blue",
+      "category": "mobile",
+      "url": "assets/images/omid-armin-B2w4rdIihEo-unsplash.jpg",
+      "id": "b124"
+    },
+    {
+      "name": "oppo",
+      "price": "50099",
+      "color": "redish",
+      "category": "mobile",
+      "url": "assets/images/david-svihovec-Gd6hKygUGi8-unsplash.jpg",
+      "id": "55cd"
+    },
+    {
+      "name": "Oneplus",
+      "price": "30099",
+      "color": "blue",
+      "category": "mobile",
+      "url": "assets/images/hardik-sharma-CrPAvN29Nhs-unsplash.jpg",
+      "id": "b124"
+    },
+    {
+      "name": "vivo",
+      "price": "40000",
+      "color": "green",
+      "category": "mobile",
+      "url": "assets/images/francesco-1bBCtUAUMFI-unsplash.jpg",
+      "id": "55cd"
+    },
+    {
+      "name": "apple",
+      "price": "80000",
+      "color": "blue",
+      "category": "mobile",
+      "url": "assets/images/omid-armin-B2w4rdIihEo-unsplash.jpg",
+      "id": "b124"
+    }
+  ],
+  "users": [
+    {
+      "name": "ajay",
+      "email": "ajay",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "amol",
+      "email": "amol",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "name": "parth",
+      "email": "parth",
+      "password": "123",
+      "id": 3
+    }
+  ],
+  "cart": [],
+  "order": [
+    {
+      "email": "ajay@gamil.com",
+      "mobile": "9529137944",
+      "address": "Pune",
+      "totalPrice": 72257.6,
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "email": "hatwarajinkya@gmail.com",
+      "mobile": "9529137944",
+      "address": "Pune",
+      "totalPrice": 36138.8,
+      "userId": 2,
+      "id": 2
+    }
+  ]
+}

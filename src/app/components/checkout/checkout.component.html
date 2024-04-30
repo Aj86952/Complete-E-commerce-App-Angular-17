@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <h3>Checkout Details</h3>
+    <div class="col-sm-7 checkout-form">
+      <form
+        class="common-form"
+        #checkoutForm="ngForm"
+        (ngSubmit)="checkout(checkoutForm.value)"
+      >
+        <div class="mb-3 d-flex col-md-8">
+          <label class="form-label mt-2 col-md-4">Email :</label>
+          <input
+            class="form-control col-md-4"
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+            ngModel
+          />
+        </div>
+
+        <div class="mb-3 d-flex col-md-8">
+          <label class="form-label mt-2 col-md-4">Mobile :</label>
+          <input
+            class="form-control col-md-4"
+            type="tel"
+            maxlength="10"
+            placeholder="Enter your mobile no."
+            name="mobile"
+            ngModel
+          />
+        </div>
+
+        <div class="mb-3 d-flex col-md-8">
+          <label class="form-label mt-2 col-md-4">Address :</label>
+          <input
+            class="form-control col-md-4"
+            type="address"
+            placeholder="Enter your mobile no."
+            name="address"
+            ngModel
+          />
+        </div>
+
+        <div class="d-flex justify-content-center col-md-8">
+          <button type="submit" class="form-button">Order Now</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-5 checkout-details">
+      <div style="margin-bottom: 20px;">Total Amount : {{ this.totalAmount.toFixed(2) | currency : '₹ '}}</div>
+      <div>Payment Method : <b>Cash on delivery</b></div>
+    </div>
+  </div>
+</div>

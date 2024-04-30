@@ -1,0 +1,60 @@
+<div class="container">
+    <h3>Update Product Details</h3>
+    <span class="success-text">{{ updateMsg }}</span>
+    <form class="common-form">
+      <div class="mb-3 d-flex col-md-8">
+        <label class="form-label mt-2 col-md-4">Name :</label>
+        <input
+          type="text"
+          class="form-control col-md-4"
+          placeholder="Enter product name"
+          [(ngModel)]="product_details.name"
+          [ngModelOptions]="{ standalone: true }"
+        />
+      </div>
+      <div class="mb-3 d-flex col-md-8">
+        <label class="form-label mt-2 col-md-4">Price :</label>
+        <input
+          type="text"
+          class="form-control col-md-4"
+          placeholder="Enter product price"
+          [(ngModel)]="product_details.price"
+          [ngModelOptions]="{ standalone: true }"
+        />
+      </div>
+      <div class="mb-3 d-flex col-md-8">
+        <label class="form-label mt-2 col-md-4">Color :</label>
+        <input
+          type="text"
+          class="form-control col-md-4"
+          placeholder="Enter product color"
+          [(ngModel)]="product_details.color"
+          [ngModelOptions]="{ standalone: true }"
+        />
+      </div>
+      <div class="mb-3 d-flex col-md-8">
+        <label class="form-label mt-2 col-md-4">Category :</label>
+        <input
+          type="text"
+          class="form-control col-md-4"
+          placeholder="Enter product category"
+          [(ngModel)]="product_details.category"
+          [ngModelOptions]="{ standalone: true }"
+        />
+      </div>
+      <div class="mb-3 d-flex col-md-8">
+        <label class="form-label mt-2 col-md-4">URL :</label>
+        <input
+          type="text"
+          class="form-control col-md-4"
+          placeholder="Enter product url"
+          [(ngModel)]="product_details.url"
+          [ngModelOptions]="{ standalone: true }"
+        />
+      </div>
+      <button type="submit" class="btn btn-outline-info" (click)="updateProduct()">
+        Update
+      </button>
+    </form>
+  </div>
+  

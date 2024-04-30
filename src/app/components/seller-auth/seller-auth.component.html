@@ -1,0 +1,78 @@
+<div class="container">
+  <div *ngIf="!isLoggedIn">
+    <h3>Seller Signup</h3>
+    <form class="common-form">
+      <div class="mb-3 d-flex col-md-8">
+        <label class="form-label mt-2 col-md-4">Name :</label>
+        <input
+          type="text"
+          class="form-control col-md-4"
+          placeholder="Enter name"
+          [(ngModel)]="form_details.name"
+          [ngModelOptions]="{ standalone: true }"
+        />
+      </div>
+      <div class="mb-3 d-flex col-md-8">
+        <label class="form-label mt-2 col-md-4">Email id :</label>
+        <input
+          type="email"
+          class="form-control col-md-4"
+          placeholder="Enter email"
+          [(ngModel)]="form_details.email"
+          [ngModelOptions]="{ standalone: true }"
+        />
+      </div>
+      <div class="mb-3 d-flex col-md-8">
+        <label class="form-label mt-2 col-md-4">Password :</label>
+        <input
+          type="password"
+          class="form-control col-md-4"
+          placeholder="Enter password"
+          [(ngModel)]="form_details.password"
+          [ngModelOptions]="{ standalone: true }"
+        />
+      </div>
+      <button type="submit" class="btn btn-outline-info" (click)="signUp()">
+        Signup
+      </button>
+      <div class="click-here-text">
+        <p>Already have an account ? <a (click)="checkLogin()">Click here</a></p>
+      </div>
+    </form>
+  </div>
+
+  <div *ngIf="isLoggedIn">
+    <h3>Seller Login</h3>
+    <div class="error-text">
+      {{this.auth_error}}
+    </div>
+    <form class="common-form">
+      <div class="mb-3 d-flex col-md-8">
+        <label class="form-label mt-2 col-md-4">Email id :</label>
+        <input
+          type="email"
+          class="form-control col-md-4"
+          placeholder="Enter email"
+          [(ngModel)]="form_details.email"
+          [ngModelOptions]="{ standalone: true }"
+        />
+      </div>
+      <div class="mb-3 d-flex col-md-8">
+        <label class="form-label mt-2 col-md-4">Password :</label>
+        <input
+          type="password"
+          class="form-control col-md-4"
+          placeholder="Enter password"
+          [(ngModel)]="form_details.password"
+          [ngModelOptions]="{ standalone: true }"
+        />
+      </div>
+      <button type="submit" class="btn btn-outline-info" (click)="logIn()">
+        Login
+      </button>
+      <div class="click-here-text">
+        <p>Want to create an account ? <a (click)="checkLogin()">Click here</a></p>
+      </div>
+    </form>
+  </div>
+</div>

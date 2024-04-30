@@ -1,0 +1,34 @@
+<div class="continer mt-3">
+  <div class="row detail-wrapper" *ngIf="productDetails">
+    <div class="col-md-6">
+      <img src="{{ productDetails.url }}" alt="img" />
+    </div>
+    <div class="col-md-6 product-detail-list">
+      <h6>Name : {{ productDetails.name | titlecase }}</h6>
+      <p class="mt-4">Price : {{ productDetails.price | currency : "₹ " }}</p>
+      <!-- <p>Color : {{ productDetails.color | titlecase }}</p> -->
+      <div class="d-flex">
+        Color :  {{ productDetails.color | titlecase }}
+        <p
+          [style.backgroundColor]="productDetails.color"
+          class="product-color"
+        >
+        </p>
+      </div>
+      <p>Category : {{ productDetails.category | titlecase }}</p>
+
+      <div>
+        Quantity :
+        <button type="submit" class="form-button" (click)="handleQuantity('minus')">-</button>
+        <input type="number" [ngModel]="qunatity" />
+        <button type="submit" class="form-button" (click)="handleQuantity('plus')">+</button>
+      </div>
+
+      <div class="action-button">
+        <button type="submit" class="me-3 form-button">Buy Now</button>
+        <button *ngIf="!removeCart" type="submit" class="form-button" (click)="addToCart()">Add to cart</button>
+        <button *ngIf="removeCart" type="submit" class="form-button" (click)="removeFromCart(productDetails.id)">Remove from Cart</button>
+      </div>
+    </div>
+  </div>
+</div>

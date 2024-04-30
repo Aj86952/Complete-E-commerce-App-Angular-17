@@ -1,0 +1,40 @@
+<div class="row cart-page">
+  <h3>Cart Page</h3>
+  <div class="col-sm-8 cart-details" *ngIf="cartList?.length">
+    <ul *ngFor="let item of cartList">
+      <li>
+        <img src="{{ item.url }}" alt="img" />
+      </li>
+      <li>{{ item.name | titlecase}}</li>
+      <li>Price : {{ item.price | currency : '₹ '}}</li>
+      <li>Quantity : {{ item.qunatity }}</li>
+      <li><button type="submit" class="form-button" (click)="removeCartItem(item.id)">Remove from Cart</button></li>
+    </ul>
+  </div>
+  <div class="col-sm-4 cart-summary">
+    <h4>Summary</h4>
+    <ul>
+      <li>
+        <span>Amount : </span> <span>{{ this.priceSummary.price }}</span>
+      </li>
+      <li>
+        <span>Tax : </span> <span>{{ this.priceSummary.tax }}</span>
+      </li>
+      <li>
+        <span>Delivery : </span><span>{{ this.priceSummary.delivery }}</span>
+      </li>
+      <li>
+        <span>Discount : </span><span>{{ this.priceSummary.discount }}</span>
+      </li>
+      <li>
+        <span><b>Total</b> :</span>
+        <span
+          ><b>{{ this.priceSummary.total.toFixed(2) | currency : '₹ '}}</b></span
+        >
+      </li>
+      <li>
+        <button type="submit" class="form-button w-100" routerLink="/checkout">Checkout</button>
+      </li>
+    </ul>
+  </div>
+</div>

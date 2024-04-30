@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.card-heading {
+  color: blueviolet;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.carousel-img {
+  width: auto;
+  height: 400px;
+}
+
+.carousel-caption {
+  background-color: gray;
+  color: greenyellow;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  // object-fit: contain;
+}
+
+.image-wrpper {
+  text-align: center;
+}
+
+.card-body {
+  padding: 5px;
+  text-align: center;
+}
+
+.card-body h5 {
+  color: blueviolet;
+}
+
+.card-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-links a {
+  text-decoration: none;
+  color: black;
+  padding: 0px 10px;
+}
+
+.card-links a:hover{
+    color: blueviolet;
+  }
+
+.list-group {
+  padding: 5px;
+  text-align: center;
+}

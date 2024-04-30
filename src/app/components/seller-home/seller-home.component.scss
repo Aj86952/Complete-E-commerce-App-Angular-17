@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+table{
+    text-align: left;
+    vertical-align: middle;
+    // border: 1px solid black;
+    // margin-top: 20px;
+    // border-collapse: collapse;
+}
+
+// table th, table td{
+//     border: 1px solid black;
+//     padding: 20px;
+//     min-height: 160px;
+// }
+
+// table th{
+//     color: blueviolet;
+//     border: 2px solid black;
+//     padding: 20px;
+//     min-height: 160px;
+// }
+
+// table td{
+//     border: 1px solid black;
+//     padding: 20px;
+//     min-height: 160px;
+// }
+
+img{
+    width: 80px;
+    height: 80px;
+}
+
+.card{
+    width: 18rem;
+    position: relative;
+    top: 30px;
+    left: 400px;
+}
+
+.success-text{
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.error-text{
+    color: red;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}

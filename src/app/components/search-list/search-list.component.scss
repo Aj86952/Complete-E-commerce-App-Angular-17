@@ -1,0 +1,36 @@
+.continer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-item{
+    margin: 15px auto;
+    width: 700px;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+
+.search-item .product-details{
+    margin-top: 15px;
+}
+
+.search-item img{
+    width: 100%;
+    object-fit: contain;
+    height: 150px;
+}
+
+.search-item h6{
+    font-size: 20px;
+    color: blueviolet;
+}
+
+.search-item a{
+    text-decoration: none;
+}
+
+.search-item p{
+    margin: 0px;
+}

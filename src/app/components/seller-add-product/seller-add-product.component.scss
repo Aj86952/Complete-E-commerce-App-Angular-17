@@ -1,0 +1,50 @@
+
+div h3{
+    text-align: center;
+    margin-top: 22px;
+}
+
+.container{
+    background-color: whitesmoke;
+    width: 40%;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.common-form{
+    margin-top: 20px;
+    width: 80%;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.click-here-text{
+    position: relative;
+    top: 10px;
+    left: 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.success-text{
+    color: green;
+    margin-top: 10px;
+    position: relative;
+    left: 150px;
+}
+
+.error-text{
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+button{
+    position: relative;
+    left: 30px;
+}

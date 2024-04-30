@@ -1,0 +1,17 @@
+<div class="continer" *ngIf="searchList?.length">
+  <div class="row search-item" *ngFor="let item of searchList">
+    <div class="col-sm-3">
+      <a routerLink="/product-details/{{ item.id }}">
+        <img src="{{ item.url }}" alt="img" />
+      </a>
+    </div>
+    <div class="col-sm-5 product-details">
+      <a routerLink="/product-details/{{ item.id }}">
+        <h6>Name : {{ item.name | titlecase }}</h6>
+      </a>
+      <p>Price : {{ item.price | currency : "₹ " }}</p>
+      <p>Color : {{ item.color | titlecase }}</p>
+      <p>Category : {{ item.category | titlecase }}</p>
+    </div>
+  </div>
+</div>

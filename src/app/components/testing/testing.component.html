@@ -1,0 +1,23 @@
+<div appHosting>testing works..!</div>
+
+<input placeholder="Enter number" type="number" appHosting />
+
+<hr />
+
+<div>
+  <input type="text" placeholder="Enter name" #name />
+  <button (click)="submit(name)">Submit</button>
+</div>
+
+<hr />
+
+<div>
+    <h4>My name is  <span>{{my_name}}</span></h4>
+</div>
+
+<hr/>
+
+<h6>Child to Parent data transfer</h6>
+<div>
+  <input type="text" placeholder="Enter name" (input)="sendMessage($event)" />
+</div>

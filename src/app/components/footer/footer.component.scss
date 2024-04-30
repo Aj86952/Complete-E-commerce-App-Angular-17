@@ -1,0 +1,18 @@
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-list{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.footer-list span{
+    margin-right: 5px;
+    cursor: not-allowed;
+}

@@ -1,0 +1,66 @@
+<!-- <div class="container">
+  <table>
+    <tr>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Color</th>
+      <th>Category</th>
+    </tr>
+    <ng-container *ngIf="productList?.length; else noRecord">
+      <tr *ngFor="let item of productList">
+        <td><img src="{{ item.name }}" alt="img" /></td>
+        <td>{{ item.name | titlecase }}</td>
+        <td>{{ item.price }}</td>
+        <td>{{ item.color | titlecase }}</td>
+        <td>{{ item.category | titlecase }}</td>
+      </tr>
+    </ng-container>
+    <ng-template #noRecord>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">No record found</h5>
+            </div>
+          </div>
+    </ng-template>
+  </table>
+</div> -->
+
+<div class="container">
+  <h3>Product List</h3>
+  <span class="error-text">{{ deleteMsg }}</span>
+  <table class="table table-hover">
+    <thead class="thead-dark">
+      <tr class="table-active">
+        <th>Image</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Color</th>
+        <th>Category</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngIf="productList?.length; else noRecord">
+        <tr class="col-md-12" *ngFor="let item of productList; let i = index">
+          <td class="col-md-2"><img src="{{ item.url }}" alt="img" /></td>
+          <td class="col-md-2">{{ item.name | titlecase }}</td>
+          <td class="col-md-2">{{ item.price | currency: '₹ '}}</td>
+          <td class="col-md-2">{{ item.color | titlecase }}</td>
+          <td class="col-md-2">{{ item.category | titlecase }}</td>
+          <td class="col-md-2">
+            <button class="btn btn-sm btn-outline-danger" type="submit" (click)="removeProduct(item.id, i)"><i class="fa fa-trash"></i></button>
+            <button class="btn btn-sm btn-outline-success ms-3" type="submit" routerLink="/seller-update-product/{{item.id}}"><i class="fa fa-edit"></i></button>
+          </td>
+        </tr>
+      </ng-container>
+      <ng-template #noRecord>
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">No record found</h5>
+          </div>
+        </div>
+      </ng-template>
+    </tbody>
+  </table>
+</div>

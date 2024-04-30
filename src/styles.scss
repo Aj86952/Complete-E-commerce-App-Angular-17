@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+// @import "~bootstrap/dist/css/bootstrap.css"
+
+body {
+  font-family: "sans-serif";
+  background-color: rosybrown;
+}
+
+/*To hide up-down arrow form type=number > Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.common-form {
+  margin-top: 20px;
+  width: 80%;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-button {
+  border: 1px solid blueviolet;
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.click-here-text {
+  position: relative;
+  top: 10px;
+  left: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
